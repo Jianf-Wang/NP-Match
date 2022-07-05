@@ -8,4 +8,4 @@ Jianfeng Wang<sup>1</sup>, Thomas Lukasiewicz<sup>1</sup>, Daniela Massiceti<sup
 
 In ICML 2022
 
-[Arxiv](https://arxiv.org/abs/2106.09859)
+[Arxiv](https://arxiv.org/abs/2207.01066)
