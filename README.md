@@ -37,7 +37,7 @@ To run experiment on ImageNet, please prepare the dataset, and change the config
 python npmatch.py --c config/npmatch/npmatch_imagenet_100000.yaml
 ```
 
-For the pertrained models, I did not save them, and I do not have enough computational resources at present. The pretrained models will be relased once we have enough resources for training.
+For the pertrained models, they were not saved. The pretrained models will be relased later once we have enough resources for training.
 
 Citation
 -----------------
