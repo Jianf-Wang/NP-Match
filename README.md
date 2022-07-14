@@ -8,7 +8,7 @@ Jianfeng Wang<sup>1</sup>, Thomas Lukasiewicz<sup>1</sup>, Daniela Massiceti<sup
 
 In ICML 2022
 
-[Arxiv](https://arxiv.org/abs/2207.01066)
+[Arxiv](https://arxiv.org/abs/2207.01066)  [Paper](https://proceedings.mlr.press/v162/wang22s.html)
 
 
 Build
@@ -42,4 +42,11 @@ For the pertrained models, I did not save them, and I do not have enough computa
 Citation
 -----------------
 
-Please cite our paper if this repo is helpful.
+@inproceedings{wang2022np,
+  title={NP-Match: When Neural Processes meet Semi-Supervised Learning},
+  author={Wang, Jianfeng and Lukasiewicz, Thomas and Massiceti, Daniela and Hu, Xiaolin and Pavlovic, Vladimir and Neophytou, Alexandros},
+  booktitle={International Conference on Machine Learning},
+  pages={22919--22934},
+  year={2022},
+  organization={PMLR}
+}
