@@ -99,7 +99,7 @@ def main_worker(gpu, ngpus_per_node, args):
     logger = get_logger(args.save_name, save_path, logger_level)
     logger.warning(f"USE GPU: {args.gpu} for training")
 
-    # SET flexmatch: class flexmatch in models.flexmatch
+     
     args.bn_momentum = 1.0 - 0.999
     if 'imagenet' in args.dataset.lower():
         _net_builder = net_builder('ResNet50', False, None)
@@ -138,7 +138,7 @@ def main_worker(gpu, ngpus_per_node, args):
                                                 args.num_train_iter,
                                                 63. / 128.,
                                                 num_warmup_steps=args.num_train_iter * 0)
-    ## set SGD and cosine lr on flexmatch
+     
     model.set_optimizer(optimizer, scheduler)
 
     # SET Devices for (Distributed) DataParallel
@@ -229,7 +229,7 @@ def main_worker(gpu, ngpus_per_node, args):
                                           num_workers=args.num_workers,
                                           drop_last=False)
 
-    ## set DataLoader and ulb_dset on FlexMatch
+     
     model.set_data_loader(loader_dict)
 
     model.set_dset(ulb_dset)
@@ -238,7 +238,7 @@ def main_worker(gpu, ngpus_per_node, args):
     if args.resume:
         model.load_model(args.load_path)
 
-    # START TRAINING of flexmatch
+     
     trainer = model.train
     for epoch in range(args.epoch):
         trainer(args, logger=logger)
@@ -277,7 +277,7 @@ if __name__ == "__main__":
     parser.add_argument('--use_tensorboard', action='store_true', help='Use tensorboard to plot and save curves, otherwise save the curves locally.')
 
     '''
-    Training Configuration of flexmatch
+    Training Configuration 
     '''
 
     parser.add_argument('--epoch', type=int, default=1)
