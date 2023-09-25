@@ -39,6 +39,10 @@ python npmatch.py --c config/npmatch/npmatch_imagenet_100000.yaml
 
 For the pertrained models, they were not saved. The pretrained models will be relased later once we have enough resources for training.
 
+Update
+-----
+We also adapt Neural Processes to semi-supervised semantic segmentation task. Please refer to [NP-SemiSeg](https://github.com/Jianf-Wang/NP-SemiSeg) if you are interested in it.
+
 Citation
 -----------------
 
